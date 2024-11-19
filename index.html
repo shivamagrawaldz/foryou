@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>This one is for my Varchhu</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="garden.js"></script>
+<script type="text/javascript" src="functions .js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*THE CODE OF LOVE</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Hii T !<br />
+			so first of all sorry for that day, i was rude and react very bad at that time. <br />
+			<span class="comments"></span><br />
+			us bare me aram se baat krengey kuch dino me filhal ye dekh,<br />
+			<span class="comments">// i very well know , i have committed many things to and i remember all of them , and will do them also</span><br />
+			toh usey side krte hain<br />
+			baaki abhi tujhse ye kehna tha ki gussa na hua kar bas , wese toh tu nhi hoti , i know u are so much understanding ,<br />
+			but fir bhi kehna chahunga , bas gussa mt hua kar , <br />
+			<br />
+			baaki sab bdiya hai , aap bhi bdiya hum bhi bdiya<br />
+			aur haan...<br />
+			<span class="comments">// i'm assuring you that i will imprve on my pace.</span><br />
+			and must say glad to have you..<br />
+			<br>
+			<br>
+			now ,All I want to say is:<br />
+			i love you ;) <br />
+			<br>
+			<br>
+			click on heart , and see how u look when you gussa from me.<br />
+			<br>
+			<span id="heartspan">
+			<a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+				 
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					<br/>
+					<div class="signature"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+// together.setFullYear(2024, 11, 19);
+// // together.setHours(16);
+// // together.setMinutes(30);
+// // together.setSeconds(0);
+// // together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
